@@ -1,8 +1,6 @@
 import os
 import zipfile
-
 import pandas as pd
-
 
 def load_df(df_zip_path):
     with zipfile.ZipFile(df_zip_path, 'r') as zip_ref:
