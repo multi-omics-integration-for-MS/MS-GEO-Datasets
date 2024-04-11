@@ -1,6 +1,9 @@
 __pycache__
 
 GSE239626/GSE239626
+GSE239626/features.tsv
+GSE239626/GSE239626_matrix.mtx.gz
+GSE239626/GSE239626_matrix.mtx
 GSE239626/GSE239626_antibody_capture_matrix.pkl
 GSE239626/GSE239626_family_phenotype_data.pkl
 GSE239626/GSE239626_gene_expression_matrix.pkl
@@ -9,3 +12,4 @@ GSE239626/GSE239626_genomic_matrix_matrix.pkl
 GSE159033/GSE159033
 GSE159033/GSE159033_genomic_matrix_matrix.csv
 GSE159033/GSE159033_family_phenotype_data.csv
+GSE239626/GSE239626_barcode.tsv
