@@ -15,9 +15,9 @@ MATRIX_LINK = 'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE239nnn/GSE239626/suppl
 BARCODE_ZIP_PATH = 'GSE239626/GSE239626_barcode.zip'
 BARCODE_PATH = 'GSE239626/GSE239626_barcode.tsv'
 
-GENOMIC_MATRIX_PATH = 'GSE239626\GSE239626_genomic_matrix_matrix.pkl'
-GENE_EXPRESSION_PATH = 'GSE239626\GSE239626_gene_expression_matrix.pkl'
-ANTIBODY_CAPTURE_PATH = 'GSE239626\GSE239626_antibody_capture_matrix.pkl'
+GENOMIC_MATRIX_PATH = 'GSE239626/GSE239626_genomic_matrix.pkl'
+GENE_EXPRESSION_PATH = 'GSE239626/GSE239626_gene_expression_matrix.pkl'
+ANTIBODY_CAPTURE_PATH = 'GSE239626/GSE239626_antibody_capture_matrix.pkl'
 
 FAMILY_ZIP_PATH = 'GSE239626/GSE239626_family_phenotype_data.zip'
 FAMILY_PATH = 'GSE239626/GSE239626_family_phenotype_data.pkl'
@@ -31,7 +31,8 @@ def slip_antibody_and_gene(genomic_matrix_df):
     save_piclke(gene_expression_df, GENE_EXPRESSION_PATH)
 
 def assemble_genomic_matrix():
-    unzip_file(FEATURES_ZIP_PATH)
+    if not os.path.exists(FEATURES_PATH):
+        unzip_file(FEATURES_ZIP_PATH)
     features_df = pd.read_csv(FEATURES_PATH, sep='\t', header=None)
     features_df.columns = ['ID', 'symbol', 'expression']
 
@@ -40,7 +41,8 @@ def assemble_genomic_matrix():
     matrix = scipy.io.mmread(MATRIX_PATH)
     matrix_df = pd.DataFrame.sparse.from_spmatrix(matrix)
     
-    unzip_file(BARCODE_ZIP_PATH)
+    if not os.path.exists(BARCODE_PATH):
+        unzip_file(BARCODE_ZIP_PATH)
     barcode_df = pd.read_csv(BARCODE_PATH, header=None)
 
     matrix_df.columns = barcode_df[0]
@@ -55,17 +57,28 @@ def load_genomic_matrix():
         assemble_genomic_matrix()
         genomic_matrix_df = load_pickle(GENOMIC_MATRIX_PATH)
 
-    if os.path.exists(GENE_EXPRESSION_PATH) and os.path.exists(ANTIBODY_CAPTURE_PATH):
+    if not os.path.exists(GENE_EXPRESSION_PATH) and not os.path.exists(ANTIBODY_CAPTURE_PATH):
+        slip_antibody_and_gene(genomic_matrix_df)
+    else:
         gene_expression_df = load_pickle(GENE_EXPRESSION_PATH)
         antibody_capture_df = load_pickle(ANTIBODY_CAPTURE_PATH)
-    else:
-        slip_antibody_and_gene(genomic_matrix_df)
     
     return genomic_matrix_df, gene_expression_df, antibody_capture_df
 
 def load_GSE239626():
+    """
+    Load data from GSE239626 dataset
+
+    Returns:
+        genomic_matrix_df (pd.DataFrame): Genomic matrix data
+        gene_expression_df (pd.DataFrame): Gene expression data, subset of genomic matrix
+        antibody_capture_df (pd.DataFrame): Antibody capture data, subset of genomic matrix
+        family_phenotype_df (pd.DataFrame): Family phenotype data
+    """
     genomic_matrix_df, gene_expression_df, antibody_capture_df = load_genomic_matrix()
-    unzip_file(FAMILY_ZIP_PATH)
+
+    if not os.path.exists(FAMILY_PATH):
+        unzip_file(FAMILY_ZIP_PATH)
     family_phenotype_df = pd.read_pickle(FAMILY_PATH)
 
     return genomic_matrix_df, gene_expression_df, antibody_capture_df, family_phenotype_df

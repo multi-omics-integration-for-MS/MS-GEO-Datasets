@@ -21,18 +21,16 @@ def load_data_from_link(url, folder_path):
         return filename
 
 def unzip_file(zip_path):
-    if os.path.exists(zip_path):
-        pass
-    else:
-        with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-            folder_path = os.path.dirname(zip_path)
-            zip_ref.extractall(folder_path)
-    
-        #unzip_file = zip_ref.namelist()
-        #return unzip_file
+    with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+        folder_path = os.path.dirname(zip_path)
+        zip_ref.extractall(folder_path)
+
+    #unzip_file = zip_ref.namelist()
+    #return unzip_file
 
 def unzip_and_extract_file(zip_path, file_path):
-    unzip_file(zip_path)
+    if not os.path.exists(file_path):
+        unzip_file(zip_path)
     df = pd.read_csv(file_path, index_col=0)
 
     return df
