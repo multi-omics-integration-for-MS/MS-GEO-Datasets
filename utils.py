@@ -44,3 +44,9 @@ def decompress_gzip(input_filepath, output_filepath):
         with gzip.open(f_path, 'rb') as f_in:
             with open(output_filepath, 'wb') as f_out:
                 f_out.write(f_in.read())
+
+def save_piclke(df, path):
+    df.to_pickle(path)
+
+def load_pickle(path):
+    return pd.read_pickle(path)
