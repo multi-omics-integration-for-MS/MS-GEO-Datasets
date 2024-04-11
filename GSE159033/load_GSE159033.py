@@ -1,10 +1,10 @@
 from utils import unzip_and_extract_file
 
-MATRIX_ZIP_PATH = 'GSE159033\GSE159033_genomic_matrix.zip'
-MATRIX_PATH = 'GSE159033\GSE159033_genomic_matrix_matrix.csv'
+MATRIX_ZIP_PATH = 'GSE159033/GSE159033_genomic_matrix.zip'
+MATRIX_PATH = 'GSE159033/GSE159033_genomic_matrix_matrix.csv'
 
-FAMILY_ZIP_PATH = 'GSE159033\GSE159033_family_phenotype_data.zip'
-FAMILY_PATH = 'GSE159033\GSE159033_family_phenotype_data.csv'
+FAMILY_ZIP_PATH = 'GSE159033/GSE159033_family_phenotype_data.zip'
+FAMILY_PATH = 'GSE159033/GSE159033_family_phenotype_data.csv'
 
 
 def load_GSE159033():
