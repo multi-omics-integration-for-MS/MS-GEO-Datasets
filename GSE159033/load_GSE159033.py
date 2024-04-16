@@ -1,4 +1,8 @@
+import os
+
 from utils import unzip_and_extract_file
+
+REPOSITORY_PATH = 'MS-GEO-Datasets/'
 
 MATRIX_ZIP_PATH = 'GSE159033/GSE159033_genomic_matrix.zip'
 MATRIX_PATH = 'GSE159033/GSE159033_genomic_matrix_matrix.csv'
@@ -15,7 +19,10 @@ def load_GSE159033():
         genomic_matrix_df (pd.DataFrame): Genomic matrix data
         family_phenotype_df (pd.DataFrame): Family phenotype data
     """
-    genomic_matrix_df = unzip_and_extract_file(MATRIX_ZIP_PATH, MATRIX_PATH)
-    family_phenotype_df = unzip_and_extract_file(FAMILY_ZIP_PATH, FAMILY_PATH)
+    if REPOSITORY_PATH in os.getcwd(): root = REPOSITORY_PATH
+    else: root = ''
+
+    genomic_matrix_df = unzip_and_extract_file(root+MATRIX_ZIP_PATH, MATRIX_PATH)
+    family_phenotype_df = unzip_and_extract_file(root+FAMILY_ZIP_PATH, FAMILY_PATH)
 
     return genomic_matrix_df, family_phenotype_df
