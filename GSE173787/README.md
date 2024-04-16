@@ -1,0 +1,9 @@
+| Field           | Value                                                                                                  |
+|-----------------|--------------------------------------------------------------------------------------------------------|
+| Series          | GSE173787                                                                                              |
+| Title           | DNA methylation profiles of four immune cell types from MS patients and healthy controls               |
+| Organism        | Homo sapiens                                                                                           |
+| Experiment type | Methylation profiling by high throughput sequencing                                                    |
+| Summary         | How epigenetic changes contribute to MS pathogenesis is still poorly understood. Therefore, we conducted a comprehensive analysis of genome-wide DNA methylation patterns in four immune cell populations isolated from MS patients at clinical disease onset. We also performed parallel transcriptome analysis in B cells to better understand the functional consequences of the DNA methylation changes in MS. |
+| Overall design | Four immune cell populations, namely CD4+ and CD8+T cells, CD14+ monocytes and CD19+ B cells, were FACS sorted from PBMC samples from a cohort of MS and HC subjects. Cell were then used for DNA extraction and DNA methylation profiling by bisulfite sequencing (BS-seq). The total RNA from B cell fractions were used for mRNA-seq. |
+| Link            | [GSE173787](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE173787)                              |
