@@ -9,7 +9,7 @@
 | Link            | [GSE173787](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE173787)                              |
 
 
-
+Lo studio è stato condotto su 29 pazienti affetti da sclerosi multipla (MS) e 24 soggetti sani (HC), divisi ulteriormente in due gruppi di dati. Il primo cohort (17 pazienti MS e 12 controlli sani) è stato utilizzato per l'analisi delle cellule CD4+, CD8+, CD14+ e CD19+, mentre il secondo cohort è stato impiegato esclusivamente per l'analisi delle cellule CD19+. I dati sono suddivisi in 14 dataset che contengono varie informazioni (per ulteriori dettagli, consultare [l'abstract](GSE173787\pnas.2111920118.sapp.pdf)).
 | Dataset | Description |
 |---------|-------------|
 | [Dataset S1](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE173787\pnas.2111920118.sd01.xlsx)  | Metilomi del DNA su cellule CD4+, CD8+, CD14+ e CD19+ da un primo gruppo di MS pazienti e controlli sani. Media di 17x di profondità di sequenziamento e copertura del 92% del genoma umano di riferimento. |
