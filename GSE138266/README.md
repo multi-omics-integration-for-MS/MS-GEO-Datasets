@@ -1,0 +1,10 @@
+| Field           | Value                                                                                                   |
+|-----------------|---------------------------------------------------------------------------------------------------------|
+| Status          | Public on Dec 10, 2019                                                                                   |
+| Title           | Integrated single cell analysis of blood and cerebrospinal fluid leukocytes in multiple sclerosis        |
+| Organism        | Homo sapiens                                                                                            |
+| Experiment type | Expression profiling by high throughput sequencing                                                     |
+| Summary         | Cerebrospinal fluid (CSF) protects the central nervous system (CNS) and analyzing CSF aids the diagnosis of CNS diseases, but our understanding of CSF leukocytes remains superficial. Here, using single cell transcriptomics, we identified a specific border-associated composition and transcriptome of CSF leukocytes. Multiple sclerosis (MS) – an autoimmune disease of the CNS – increased transcriptional diversity in blood, but increased cell type diversity in CSF including a higher abundance of cytotoxic phenotype T helper cells. A new analytical approach, named cell set enrichment analysis (CSEA) identified a cluster-independent increase of follicular T helper (TFH) cells potentially driving the known expansion of B lineage cells in the CSF in MS. In mice, TFH cells accordingly promoted B cell infiltration into the CNS and the severity of MS animal models. Immune mechanisms in MS are thus highly compartmentalized and indicate ongoing local T/B cell interaction. |
+| Design          | 5 v.s. 5 Case-Control design for the single cell RNAseq experiment                                      |
+| Samples         | Each donor provided 2 samples from the cerebrospinal fluid and PBMC                                     |
+| Link            | [GSE138266](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE138266)                          |
