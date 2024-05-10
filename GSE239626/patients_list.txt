@@ -1,0 +1,40 @@
+GSM7669046, Patient, Placebo, N1, J0, GEX
+GSM7669047, Patient, Placebo, N1, J0, ADT
+GSM7669048, Patient, Placebo, N1, M3, GEX
+GSM7669049, Patient, Placebo, N1, M3, ADT
+GSM7669050, Patient, Placebo, N2, J0, GEX
+GSM7669051, Patient, Placebo, N2, J0, ADT
+GSM7669052, Patient, Placebo, N2, M3, GEX
+GSM7669053, Patient, Placebo, N2, M3, ADT
+GSM7669054, Patient, Placebo, N3, J0, GEX
+GSM7669055, Patient, Placebo, N3, J0, ADT
+GSM7669056, Patient, Placebo, N3, M3, GEX
+GSM7669057, Patient, Placebo, N3, M3, ADT
+GSM7669058, Patient, Placebo, N4, J0, GEX
+GSM7669059, Patient, Placebo, N4, J0, ADT
+GSM7669060, Patient, Placebo, N4, M3, GEX
+GSM7669061, Patient, Placebo, N4, M3, ADT
+GSM7669062, Patient, Placebo, N5, J0, GEX
+GSM7669063, Patient, Placebo, N5, J0, ADT
+GSM7669064, Patient, Placebo, N5, M3, GEX
+GSM7669065, Patient, Placebo, N5, M3, ADT
+GSM7669066, Patient, Vitamin D, N1, J0, GEX
+GSM7669067, Patient, Vitamin D, N1, J0, ADT
+GSM7669068, Patient, Vitamin D, N1, M3, GEX
+GSM7669069, Patient, Vitamin D, N1, M3, ADT
+GSM7669070, Patient, Vitamin D, N2, J0, GEX
+GSM7669071, Patient, Vitamin D, N2, J0, ADT
+GSM7669072, Patient, Vitamin D, N2, M3, GEX
+GSM7669073, Patient, Vitamin D, N2, M3, ADT
+GSM7669074, Patient, Vitamin D, N3, J0, GEX
+GSM7669075, Patient, Vitamin D, N3, J0, ADT
+GSM7669076, Patient, Vitamin D, N3, M3, GEX
+GSM7669077, Patient, Vitamin D, N3, M3, ADT
+GSM7669078, Patient, Vitamin D, N4, J0, GEX
+GSM7669079, Patient, Vitamin D, N4, J0, ADT
+GSM7669080, Patient, Vitamin D, N4, M3, GEX
+GSM7669081, Patient, Vitamin D, N4, M3, ADT
+GSM7669082, Patient, Vitamin D, N5, J0, GEX
+GSM7669083, Patient, Vitamin D, N5, J0, ADT
+GSM7669084, Patient, Vitamin D, N5, M3, GEX
+GSM7669085, Patient, Vitamin D, N5, M3, ADT
