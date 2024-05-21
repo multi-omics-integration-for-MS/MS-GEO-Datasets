@@ -1,5 +1,3 @@
-Ecco la tabella aggiornata con le informazioni sul dataset:
-
 | Field           | Value                                                                                                     |
 |-----------------|-----------------------------------------------------------------------------------------------------------|
 | Status          | Public on Jul 10, 2023                                                                                    |
